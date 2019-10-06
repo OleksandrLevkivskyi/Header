@@ -349,10 +349,10 @@ input::-webkit-search-cancel-button {
         width: 340px;
     }
    
-    .nav_box ul{
+    .nav_box .menu-box{
         display: inline-block;
         position: absolute;
-        /* visibility: hidden; */
+        visibility: hidden;
         right: 0; 
         top: 60px; /* Положение меню */
         margin: 0; 
@@ -417,13 +417,7 @@ input::-webkit-search-cancel-button {
         height: 215px;
     }
 
-    .dropdown input[type=checkbox]:checked ~ ul {
-        display: inline-block; 
-    }
 
-    /* #menu__toggle {
-    opacity: 0;
-  } */
   
   .menu__btn {
     display: flex; 
@@ -466,8 +460,11 @@ input::-webkit-search-cancel-button {
     top: 0;
     transform: rotate(90deg);
   }
-  #menu__toggle:checked ~ .nav_box ul{
+  #menu__toggle:checked ~ .menu-box{
     visibility: visible;
     right: 0;
+    }
+    #menu:checked ~ .menu {
+        display: inline-block;
     }
 }
